@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Implemented
 {
-    class Class1
+    public abstract class GasolineCar : Car
     {
+        public abstract void Fuel();
+
+        public abstract void RaceAgainst(GasolineCar opponent);
     }
 }

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Structural
 {
-    class Class1
+    public abstract class AbstractFactory
     {
+        public abstract AbstractProductOne CreateProductOne();
+
+        public abstract AbstractProductTwo CreateProductTwo();
     }
 }

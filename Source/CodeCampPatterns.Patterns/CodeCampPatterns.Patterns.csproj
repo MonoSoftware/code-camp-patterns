@@ -41,7 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Implemented\Car.cs" />
+    <Compile Include="Implemented\CarFactory.cs" />
+    <Compile Include="Implemented\Cars.cs" />
+    <Compile Include="Implemented\Class1.cs" />
+    <Compile Include="Implemented\ElectricCar.cs" />
+    <Compile Include="Implemented\FordFactory.cs" />
+    <Compile Include="Implemented\GasolineCar.cs" />
+    <Compile Include="Implemented\MercedesFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structural\AbstractFactory.cs" />
+    <Compile Include="Structural\AbstractProducts.cs" />
+    <Compile Include="Structural\Class1.cs" />
+    <Compile Include="Structural\Factory.cs" />
+    <Compile Include="Structural\Products.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
