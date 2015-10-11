@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Structural
 {
-    class Class1
+    public class Adaptee
     {
+        public void SpecificAdapteeMethod()
+        {
+            Console.WriteLine("SpecificAdapteeMethod is called!");
+        }
     }
 }

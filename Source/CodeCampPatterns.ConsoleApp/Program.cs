@@ -16,12 +16,24 @@ namespace CodeCampPatterns.ConsoleApp
         {
 #if Structural
             //Example with the structural code
-            
-
+            ITarget target = new Adapter();
+            target.SpecificMethod();
+            Console.ReadLine();
 #else
             //Example with the implemented pattern on a real-world example
-            
 
+            List<IVehicle> vehicles = new List<IVehicle>()
+            {
+                new CarAdapter(),
+                new MotorcycleAdapter()
+            };
+
+            foreach (IVehicle vehicle in vehicles)
+            {
+                vehicle.GetVehicleName();
+            }
+
+            Console.ReadLine();
 #endif
         }
     }
