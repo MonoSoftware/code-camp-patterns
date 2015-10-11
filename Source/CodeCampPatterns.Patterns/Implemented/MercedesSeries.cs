@@ -4,9 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodeCampPatterns.Patterns.Structural
+namespace CodeCampPatterns.Patterns.Implemented
 {
-    class Class1
+    public enum MercedesSeries
     {
+        A,
+        B,
+        C,
+        E,
+        S
     }
 }

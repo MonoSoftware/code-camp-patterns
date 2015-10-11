@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Implemented
 {
-    class Class1
+    public abstract class Factory
     {
+        public abstract Car CreateCar(MercedesSeries series);
     }
 }
