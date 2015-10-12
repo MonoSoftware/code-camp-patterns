@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Structural
 {
-    class Class1
+    public interface IComponent
     {
+        void Operation();
     }
 }

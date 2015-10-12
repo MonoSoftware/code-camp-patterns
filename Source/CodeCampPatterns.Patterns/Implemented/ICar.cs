@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Implemented
 {
-    class Class1
+    public interface ICar
     {
+        int Id { get; }
+        string Name { get; }
+        DateTime Date { get; }
+
+        void Assemble();
     }
 }
