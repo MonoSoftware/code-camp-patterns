@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Implemented\Class1.cs" />
+    <Compile Include="Implemented\Employee.cs" />
+    <Compile Include="Implemented\IWorker.cs" />
+    <Compile Include="Implemented\Supervisor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structural\Component.cs" />
     <Compile Include="Structural\Composite.cs" />

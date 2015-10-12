@@ -38,8 +38,35 @@ namespace CodeCampPatterns.ConsoleApp
 
 #else
             //Example with the implemented pattern on a real-world example
-            
 
+            Supervisor managingDirector = new Supervisor(1, "John", "Managing Director");
+
+            Supervisor salesDirector = new Supervisor(2, "Jennifer", "Sales Director");
+
+            Supervisor marketingDirector = new Supervisor(3, "Phil", "Marketing Director");
+
+            Supervisor financeDirector = new Supervisor(4, "Ann", "Finance Director");
+
+            managingDirector.AddEmployee(salesDirector);
+            managingDirector.AddEmployee(marketingDirector);
+            managingDirector.AddEmployee(financeDirector);
+
+            Employee salesRepresentative1 = new Employee(5, "Alex", "Sales representative");
+            Employee salesRepresentative2 = new Employee(6, "Travis", "Sales representative");
+            salesDirector.AddEmployee(salesRepresentative1);
+            salesDirector.AddEmployee(salesRepresentative2);
+
+            Supervisor managementAccountant = new Supervisor(7, "Barbara", "Management accountant");
+            Employee financialAccountant = new Employee(8, "David", "Financial accountant");
+            financeDirector.AddEmployee(managementAccountant);
+            financeDirector.AddEmployee(financialAccountant);
+
+            Employee accountantAssistant = new Employee(9, "Andy", "Accountant assistant");
+            managementAccountant.AddEmployee(accountantAssistant);
+
+            managingDirector.Display(0);
+
+            Console.ReadLine();
 #endif
         }
     }
