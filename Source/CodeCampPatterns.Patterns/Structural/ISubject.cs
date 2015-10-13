@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodeCampPatterns.Patterns.Implemented
+namespace CodeCampPatterns.Patterns.Structural
 {
-    class Class1
+    public interface ISubject
     {
+        void PerformAction();
     }
 }

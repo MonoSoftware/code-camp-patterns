@@ -1,4 +1,4 @@
-﻿#define Structural
+﻿//#define Structural
 
 using System;
 using System.Collections.Generic;
@@ -16,12 +16,24 @@ namespace CodeCampPatterns.ConsoleApp
         {
 #if Structural
             //Example with the structural code
-            
+            ISubject realSubject = new RealSubject();
+            realSubject.PerformAction();
+
+            ISubject proxy = new Proxy();
+            proxy.PerformAction();
+
+            Console.ReadLine();
 
 #else
             //Example with the implemented pattern on a real-world example
-            
 
+            SafeCar safeCar1 = new SafeCar(25);
+            SafeCar safeCar2 = new SafeCar(17);
+
+            safeCar1.DriveCar();
+            safeCar2.DriveCar();
+
+            Console.ReadLine();
 #endif
         }
     }
