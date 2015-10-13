@@ -1,4 +1,4 @@
-﻿#define Structural
+﻿//#define Structural
 
 using System;
 using System.Collections.Generic;
@@ -16,12 +16,19 @@ namespace CodeCampPatterns.ConsoleApp
         {
 #if Structural
             //Example with the structural code
-            
+            Facade facade = new Facade();
+            facade.OperationA();
+            facade.OperationB();
+            facade.OperationZ();
+
+            Console.ReadLine();
 
 #else
             //Example with the implemented pattern on a real-world example
-            
+            Car car = new Car();
+            car.CreateCar();
 
+            Console.ReadLine();
 #endif
         }
     }

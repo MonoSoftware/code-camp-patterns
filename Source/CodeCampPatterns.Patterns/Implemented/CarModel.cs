@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Implemented
 {
-    class Class1
+    public class CarModel
     {
+        public void DecideModel()
+        {
+            Console.WriteLine("Model decided!");
+        }
     }
 }
