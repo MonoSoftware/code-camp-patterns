@@ -23,7 +23,7 @@ namespace CodeCampPatterns.ConsoleApp
                 AbstractProduct p = factory.CreateProduct(i);
                 if (p != null)
                 {
-                    Console.WriteLine(@"Product name: {0}", p.Name);
+                    Console.WriteLine(String.Format("Product name: {0}", p.Name));
                 }
             }
 
@@ -31,20 +31,17 @@ namespace CodeCampPatterns.ConsoleApp
 #else
             //Example with the implemented pattern on a real-world example
 
-            MercedesFactory mercedesFactory = new MercedesFactory();
-            Car mercedesAFirst = mercedesFactory.CreateCar(MercedesSeries.A);
-            Car mercedesBFirst = mercedesFactory.CreateCar(MercedesSeries.B);
-            Car mercedesCFirst = mercedesFactory.CreateCar(MercedesSeries.C);
-            Car mercedesEFirst = mercedesFactory.CreateCar(MercedesSeries.E);
-            Car mercedesSFirst = mercedesFactory.CreateCar(MercedesSeries.S);
-            Car mercedesASecond = mercedesFactory.CreateCar(MercedesSeries.A);
+            IVehicle car = VehicleFactory.CreateVehicle(VehicleType.Car);
+            IVehicle truck = VehicleFactory.CreateVehicle(VehicleType.Truck);
 
-            mercedesAFirst.GetDescription();
-            mercedesBFirst.GetDescription();
-            mercedesCFirst.GetDescription();
-            mercedesEFirst.GetDescription();
-            mercedesSFirst.GetDescription();
-            mercedesASecond.GetDescription();
+            Console.WriteLine(car.Color);
+            Console.WriteLine(car.Engine);
+
+            Console.WriteLine();
+
+            Console.WriteLine(truck.Color);
+            Console.WriteLine(truck.Engine);
+
 
             Console.ReadLine();
 #endif

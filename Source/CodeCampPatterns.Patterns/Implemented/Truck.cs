@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Implemented
 {
-    public class Car : IVehicle
+    public class Truck : IVehicle
     {
         public string Color
         {
             get
             {
-                return "Car color";
+                return "Truck color";
             }
         }
 
@@ -20,7 +20,7 @@ namespace CodeCampPatterns.Patterns.Implemented
         {
             get
             {
-                return "Gasoline engine.";
+                return "Diesel engine.";
             }
         }
     }

@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Implemented
 {
-    public enum MercedesSeries
+    public enum VehicleType
     {
-        A,
-        B,
-        C,
-        E,
-        S
+        Car,
+        Truck
     }
 }
