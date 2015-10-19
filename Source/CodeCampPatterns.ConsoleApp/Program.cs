@@ -1,4 +1,4 @@
-﻿#define Structural
+﻿//#define Structural
 
 using System;
 using System.Collections.Generic;
@@ -28,30 +28,27 @@ namespace CodeCampPatterns.ConsoleApp
 
 #else
             //Example with the implemented pattern on a real-world example
-            
+
             //Consumer of abstract factory pattern
-            CarFactory fordFactory = new FordFactory();
-            ElectricCar fordCarElectric = fordFactory.CreateElectricCar();
-            GasolineCar fordCarGasoline = fordFactory.CreateGasolineCar();
+            string make = "car";
 
-            fordCarElectric.RaceTo100Kmph();
-            fordCarElectric.Charge();
+            VehicleFactory vehicleFactory = null;
+            if (make.Equals("car"))
+            {
+                vehicleFactory = new CarFactory();
+            }
+            else
+            {
+                vehicleFactory = new TruckFactory();
+            }
 
-            fordCarGasoline.RaceTo100Kmph();
-            fordCarGasoline.Fuel();
-
-            CarFactory mercedesFactory = new MercedesFactory();
-            ElectricCar mercedesCarElectric = mercedesFactory.CreateElectricCar();
-            GasolineCar mercedesCarGasoline = mercedesFactory.CreateGasolineCar();
-
-            mercedesCarGasoline.RaceTo100Kmph();
-            mercedesCarElectric.Charge();
-
-            mercedesCarGasoline.RaceTo100Kmph();
-            mercedesCarGasoline.Fuel();
-
-            fordCarElectric.RaceAgainst(mercedesCarElectric);
-            mercedesCarGasoline.RaceAgainst(fordCarGasoline);
+            IChassis vehicleChassis = vehicleFactory.CreateChassis();
+            IEngine vehicleEngine = vehicleFactory.CreateEngine();
+            IBody vehicleBody = vehicleFactory.CreateBody();
+            
+            Console.WriteLine(vehicleChassis.ChassisParts);
+            Console.WriteLine(vehicleEngine.EngineParts);
+            Console.WriteLine(vehicleBody.BodyParts);
 
             Console.ReadLine();
 #endif

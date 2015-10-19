@@ -41,18 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Implemented\Car.cs" />
+    <Compile Include="Implemented\CarBody.cs" />
+    <Compile Include="Implemented\CarChassis.cs" />
     <Compile Include="Implemented\CarFactory.cs" />
-    <Compile Include="Implemented\Cars.cs" />
-    <Compile Include="Implemented\Class1.cs" />
-    <Compile Include="Implemented\ElectricCar.cs" />
-    <Compile Include="Implemented\FordFactory.cs" />
-    <Compile Include="Implemented\GasolineCar.cs" />
-    <Compile Include="Implemented\MercedesFactory.cs" />
+    <Compile Include="Implemented\DieselEngine.cs" />
+    <Compile Include="Implemented\GasolineEngine.cs" />
+    <Compile Include="Implemented\IBody.cs" />
+    <Compile Include="Implemented\IChassis.cs" />
+    <Compile Include="Implemented\IEngine.cs" />
+    <Compile Include="Implemented\TruckBody.cs" />
+    <Compile Include="Implemented\TruckChassis.cs" />
+    <Compile Include="Implemented\TruckFactory.cs" />
+    <Compile Include="Implemented\VehicleFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structural\AbstractFactory.cs" />
     <Compile Include="Structural\AbstractProducts.cs" />
-    <Compile Include="Structural\Class1.cs" />
     <Compile Include="Structural\Factory.cs" />
     <Compile Include="Structural\Products.cs" />
   </ItemGroup>

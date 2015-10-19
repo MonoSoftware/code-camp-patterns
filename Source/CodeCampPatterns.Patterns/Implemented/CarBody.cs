@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Implemented
 {
-    public abstract class Car
+    public class CarBody : IBody
     {
-        public abstract void RaceTo100Kmph();
+        public string BodyParts
+        {
+            get
+            {
+                return "Body parts for a car.";
+            }
+        }
     }
 }

@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Implemented
 {
-    public abstract class ElectricCar : Car
+    public interface IChassis
     {
-        public abstract void Charge();
-
-        public abstract void RaceAgainst(ElectricCar opponent);
+        string ChassisParts { get; }
     }
 }
