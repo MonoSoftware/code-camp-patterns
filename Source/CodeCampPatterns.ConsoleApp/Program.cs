@@ -25,7 +25,7 @@ namespace CodeCampPatterns.ConsoleApp
             //Example with the implemented pattern on a real-world example
             Console.WriteLine("First car:");
             Console.WriteLine("Creation started: {0}", DateTime.UtcNow);
-            ICar mercedesFirst = new Mercedes("A Class", new { CarParts = "Everything a car needs to be assembled properly." });
+            ICar mercedesFirst = new Car("A car", new { CarParts = "Everything a car needs to be assembled properly." });
             Console.WriteLine("Creation ended: {0}", DateTime.UtcNow);
 
             Console.WriteLine("Second car:");
