@@ -1,4 +1,4 @@
-﻿//#define Structural
+﻿#define Structural
 
 using System;
 using System.Collections.Generic;
