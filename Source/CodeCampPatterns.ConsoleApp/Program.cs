@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CodeCampPatterns.Patterns.Structural;
+using CodeCampPatterns.Patterns.Implemented;
 
 namespace CodeCampPatterns.ConsoleApp
 {
@@ -33,8 +34,13 @@ namespace CodeCampPatterns.ConsoleApp
             Console.ReadLine();
 #else
             //Example with the implemented pattern on a real-world example
-            
 
+            Console.WriteLine(String.Format("First car serial number: {0}", CarSerialNumberGenerator.Instance.GetNumber()));
+            Console.WriteLine(String.Format("Second car serial number: {0}", CarSerialNumberGenerator.Instance.GetNumber()));
+            Console.WriteLine(String.Format("Next car serial number: {0}", CarSerialNumberGenerator.Instance.GetNumber()));
+            Console.WriteLine(String.Format("Next car serial number: {0}", CarSerialNumberGenerator.Instance.GetNumber()));
+
+            Console.ReadLine();
 #endif
         }
     }
