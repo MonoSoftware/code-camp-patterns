@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Implemented
 {
-    class Class1
+    public class Cat : Animal
     {
+        public override void Eat()
+        {
+            Console.WriteLine("Cat: I'm eating Whiskas!");
+        }
     }
 }

@@ -1,12 +1,9 @@
-﻿#define Structural
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CodeCampPatterns.Patterns.Implemented;
-using CodeCampPatterns.Patterns.Structural;
 
 namespace CodeCampPatterns.ConsoleApp
 {
@@ -14,15 +11,16 @@ namespace CodeCampPatterns.ConsoleApp
     {
         static void Main(string[] args)
         {
-#if Structural
-            //Example with the structural code
-            
+            Dog dog = new Dog();
+            dog.Name = "Happy";
 
-#else
-            //Example with the implemented pattern on a real-world example
-            
+            Cat cat = new Cat();
+            cat.Name = "Grumpy";
 
-#endif
+            dog.Eat();
+            cat.Eat();
+
+            Console.ReadLine();
         }
     }
 }
