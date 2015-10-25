@@ -15,7 +15,7 @@ namespace CodeCampPatterns.Patterns.Structural
         {
         }
 
-        public override void Add(Component component)
+        public void Add(Component component)
         {
             _children.Add(component);
         }
@@ -31,7 +31,7 @@ namespace CodeCampPatterns.Patterns.Structural
             }
         }
 
-        public override void Remove(Component component)
+        public void Remove(Component component)
         {
             _children.Remove(component);
         }

@@ -13,19 +13,10 @@ namespace CodeCampPatterns.Patterns.Structural
         {
         }
 
-        public override void Add(Component component)
-        {
-            Console.WriteLine("Cannot add to a leaf");
-        }
-
         public override void Display(int depth)
         {
             Console.WriteLine(new String('-', depth) + name);
         }
 
-        public override void Remove(Component component)
-        {
-            Console.WriteLine("Cannot remove from a leaf");
-        }
     }
 }

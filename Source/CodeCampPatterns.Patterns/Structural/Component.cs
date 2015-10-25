@@ -10,14 +10,11 @@ namespace CodeCampPatterns.Patterns.Structural
     {
         protected string name;
 
-        // Constructor
         public Component(string name)
         {
             this.name = name;
         }
 
-        public abstract void Add(Component component);
-        public abstract void Remove(Component component);
         public abstract void Display(int depth);
     }
 }
