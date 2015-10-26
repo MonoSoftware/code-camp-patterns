@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Implemented
 {
-    public class MercedesDecorator : CarDecorator
+    public class TruckDecorator : VehicleDecorator
     {
-        public MercedesDecorator(ICar car) : base(car)
+        public TruckDecorator(IVehicle car) 
+            : base(car)
         {
         }
 
         public override void Assemble()
         {
             base.Assemble();
-            Console.WriteLine(String.Format("[{0}] Log: {1}", DateTime.Now.ToString(), "mercedes successfully finished"));
+            Console.WriteLine(String.Format("[{0}] Log: {1}", DateTime.Now.ToString(), "truck successfully finished"));
         }
     }
 }

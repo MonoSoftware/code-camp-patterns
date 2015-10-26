@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Implemented
 {
-    public class Audi : ICar
+    public class Car : IVehicle
     {
         public int Id { get; set; }
 
@@ -14,7 +14,7 @@ namespace CodeCampPatterns.Patterns.Implemented
 
         public DateTime Date { get; set; }
 
-        public Audi(int id, string name)
+        public Car(int id, string name)
         {
             this.Id = id;
             this.Name = name;
@@ -23,7 +23,7 @@ namespace CodeCampPatterns.Patterns.Implemented
 
         public void Assemble()
         {
-            Console.WriteLine("Audi - assembled!!!");
+            Console.WriteLine("Car - assembled!!!");
         }
     }
 }

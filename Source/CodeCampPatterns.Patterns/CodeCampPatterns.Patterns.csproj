@@ -41,12 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Implemented\Audi.cs" />
-    <Compile Include="Implemented\AudiDecorator.cs" />
+    <Compile Include="Implemented\Car.cs" />
     <Compile Include="Implemented\CarDecorator.cs" />
-    <Compile Include="Implemented\ICar.cs" />
-    <Compile Include="Implemented\Mercedes.cs" />
-    <Compile Include="Implemented\MercedesDecorator.cs" />
+    <Compile Include="Implemented\VehicleDecorator.cs" />
+    <Compile Include="Implemented\IVehicle.cs" />
+    <Compile Include="Implemented\Truck.cs" />
+    <Compile Include="Implemented\TruckDecorator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structural\AbstractDecorator.cs" />
     <Compile Include="Structural\Component.cs" />

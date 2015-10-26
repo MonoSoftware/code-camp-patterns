@@ -6,42 +6,17 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Implemented
 {
-    public abstract class CarDecorator : ICar
+    public class CarDecorator : VehicleDecorator
     {
-        private ICar car;
-
-        public CarDecorator(ICar car)
+        public CarDecorator(IVehicle car) 
+            : base(car)
         {
-            this.car = car;
         }
 
-        public int Id
+        public override void Assemble()
         {
-            get
-            {
-                return this.car.Id;
-            }
-        }
-
-        public DateTime Date
-        {
-            get
-            {
-                return this.car.Date;
-            }
-        }
-
-        public string Name
-        {
-            get
-            {
-                return this.car.Name;
-            }
-        }
-
-        public virtual void Assemble()
-        {
-            this.car.Assemble();
+            base.Assemble();
+            Console.WriteLine(String.Format("[{0}] Tweet: {1}", DateTime.Now.ToString(), "successfully finished #car"));
         }
     }
 }

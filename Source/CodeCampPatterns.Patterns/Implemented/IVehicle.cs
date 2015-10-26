@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Implemented
 {
-    public interface ICar
+    public interface IVehicle
     {
         int Id { get; }
         string Name { get; }

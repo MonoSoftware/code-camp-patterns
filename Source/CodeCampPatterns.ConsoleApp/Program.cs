@@ -23,14 +23,14 @@ namespace CodeCampPatterns.ConsoleApp
             Console.ReadLine();
 #else
             //Example with the implemented pattern on a real-world example
-            ICar mercedesA = new Mercedes(1, "A Class");
-            ICar audi3= new Audi(3, "A3");
+            IVehicle car = new Car(1, "Small car");
+            IVehicle vehicle = new Truck(3, "Big truck");
             
-            CarDecorator mercedesDecorator = new MercedesDecorator(mercedesA);
-            CarDecorator audiDecorator = new AudiDecorator(audi3);
+            VehicleDecorator carDecorator = new CarDecorator(car);
+            VehicleDecorator truckDecorator = new TruckDecorator(vehicle);
 
-            mercedesDecorator.Assemble();
-            audiDecorator.Assemble();
+            carDecorator.Assemble();
+            truckDecorator.Assemble();
 
             Console.ReadLine();
 #endif
