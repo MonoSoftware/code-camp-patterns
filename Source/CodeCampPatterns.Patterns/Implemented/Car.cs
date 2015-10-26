@@ -8,7 +8,7 @@ namespace CodeCampPatterns.Patterns.Implemented
 {
     public abstract class Car
     {
-        private string name;
+        private string name = "Generic Car Name";
         public string Name
         {
             get
