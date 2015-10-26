@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Implemented
 {
-    public class Dog : Animal
+    public class SportsCar : Car
     {
-        public override void Eat()
+        public override void StartEngine()
         {
-            Console.WriteLine("Dog: I'm eating big bone.");
+            Console.WriteLine("Super loud engine has been started...");
         }
     }
 }

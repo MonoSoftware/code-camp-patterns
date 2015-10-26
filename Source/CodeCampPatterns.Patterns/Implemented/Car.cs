@@ -6,24 +6,24 @@ using System.Threading.Tasks;
 
 namespace CodeCampPatterns.Patterns.Implemented
 {
-    public abstract class Animal
+    public abstract class Car
     {
         private string name;
         public string Name
         {
             get
             {
-                return name;
+                return this.name;
             }
             set
             {
-                name = value;
+                this.name = value;
             }
         }
 
-        public virtual void Eat()
+        public virtual void StartEngine()
         {
-            Console.WriteLine("I'm eating...everything...");
+            Console.WriteLine("Engine has been started...");
         }
     }
 }

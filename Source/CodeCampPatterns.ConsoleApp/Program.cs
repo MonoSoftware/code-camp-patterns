@@ -11,15 +11,15 @@ namespace CodeCampPatterns.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Dog dog = new Dog();
-            dog.Name = "Happy";
+            ElectricCar electricCar = new ElectricCar();
+            electricCar.Name = "Prius";
 
-            Cat cat = new Cat();
-            cat.Name = "Grumpy";
+            SportsCar sportsCar = new SportsCar();
+            sportsCar.Name = "Mustang";
 
-            dog.Eat();
-            cat.Eat();
-
+            electricCar.StartEngine();
+            sportsCar.StartEngine();
+            
             Console.ReadLine();
         }
     }
