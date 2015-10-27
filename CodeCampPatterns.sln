@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCampPatterns.ConsoleApp", "Source\CodeCampPatterns.ConsoleApp\CodeCampPatterns.ConsoleApp.csproj", "{45ACFD06-9F6B-4217-AB89-97DD68229DFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCampPatterns.ConsoleApp", "src\CodeCampPatterns.ConsoleApp\CodeCampPatterns.ConsoleApp.csproj", "{45ACFD06-9F6B-4217-AB89-97DD68229DFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCampPatterns.Patterns", "Source\CodeCampPatterns.Patterns\CodeCampPatterns.Patterns.csproj", "{E91658A5-931A-4395-8E3A-74C9DE6999EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCampPatterns.Patterns", "src\CodeCampPatterns.Patterns\CodeCampPatterns.Patterns.csproj", "{E91658A5-931A-4395-8E3A-74C9DE6999EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
